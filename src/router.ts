@@ -7,8 +7,8 @@ import {
   updateProduct,
   uptadeAvailability,
   getProductById,
-} from './handlers/products';
-import {handleInputErrors} from './middleware';
+} from './handlers/products.js';
+import {handleInputErrors} from './middleware/index.js';
 
 const router = Router();
 

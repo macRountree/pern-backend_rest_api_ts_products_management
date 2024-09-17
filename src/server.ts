@@ -4,8 +4,8 @@ import swaggerUI from 'swagger-ui-express';
 import cors, {CorsOptions} from 'cors';
 import morgan from 'morgan';
 import swaggerSpec, {swaggerUIOptions} from './config/swagger';
-import router from './router';
-import db from './config/db';
+import router from './router.js';
+import db from './config/db.js';
 
 async function connectDb() {
   try {
