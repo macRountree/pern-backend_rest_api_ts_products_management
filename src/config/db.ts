@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const db = new Sequelize(process.env.DATABASE_URL!, {
-  models: [join(__dirname + '/../models/**/*.ts')],
+  models: [join(__dirname + '/../models/**/*')],
   logging: false,
 });
 db.addModels([Product]);
