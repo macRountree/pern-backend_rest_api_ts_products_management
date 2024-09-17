@@ -3,7 +3,7 @@ import colors from 'colors';
 import swaggerUI from 'swagger-ui-express';
 import cors, {CorsOptions} from 'cors';
 import morgan from 'morgan';
-import swaggerSpec, {swaggerUIOptions} from './config/swagger';
+import swaggerSpec, {swaggerUIOptions} from './config/swagger.js';
 import router from './router.js';
 import db from './config/db.js';
 
